@@ -1,1 +1,122 @@
 # index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopForPop</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .product {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .product h3 {
+      margin: 15px 0 10px;
+      font-size: 1.2em;
+    }
+    .product p {
+      margin: 5px 0;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 16px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #eee;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ShopForPop</h1>
+    <p>Your go-to shop for trendy clothing & decor</p>
+  </header>
+
+  <section class="section">
+    <h2>Clothing</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://via.placeholder.com/300x200?text=T-Shirt" alt="T-Shirt" />
+        <h3>Classic T-Shirt</h3>
+        <p>$19.99</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300x200?text=Hoodie" alt="Hoodie" />
+        <h3>Cozy Hoodie</h3>
+        <p>$39.99</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Decor</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://via.placeholder.com/300x200?text=Wall+Art" alt="Wall Art" />
+        <h3>Wall Art Print</h3>
+        <p>$14.99</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300x200?text=Candle" alt="Candle" />
+        <h3>Scented Candle</h3>
+        <p>$9.99</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 ShopForPop. All rights reserved.</p>
+    <p>Contact us at: shopforpop@email.com</p>
+  </footer>
+</body>
+</html>
